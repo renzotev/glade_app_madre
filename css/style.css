@@ -1,0 +1,175 @@
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+	background:-webkit-gradient(linear,0 0,0 bottom,from(#6b4a70),to(#bb457c));
+	background:-webkit-linear-gradient(#6b4a70,#bb457c);
+	background:linear-gradient(#6b4a70,#bb457c);
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-focus-ring-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+/* For some Androids */
+}
+:focus {
+  outline: 0;
+  border: none;
+  color: rgba(0,0,0,0);
+}
+
+.page { 
+	margin: 0px auto;
+	width: 1280px;
+	height: 800px;
+	max-width: 1280px;
+	margin-top: -400px;
+	top: 50%;
+	position: relative;
+}
+
+.content_container {
+	width: 1280px;
+	height: 800px;	
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 2s ease-in-out;
+   	-webkit-transition: all 2s ease-in-out;
+}
+
+.content_container.one {
+	background-image: url("../img/sala-background.png");
+}
+
+.content_container.two {
+	background-image: url("../img/banio-background.png");
+	display: none;
+	opacity: 0;
+}
+
+.content {
+	position: relative;
+}
+
+.content ul, .content li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.content .slides {
+	position: absolute;
+	width: 1280px;
+	height: 800px;
+	display:block;
+	top:0;
+	left: 0;
+	opacity: 1;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: opacity .5s ease-in-out;
+   	-webkit-transition: opacity .5s ease-in-out;
+}
+
+.content .final-msj {
+	position: absolute;
+	width: 1280px;
+	height: 800px;
+	display:block;
+	top:0;
+	left: 0;
+	opacity: 0;
+	/*-webkit-transition: -webkit-mask-position 1.5s ease;		
+	-webkit-mask-size: 2560px 1600px;
+	display:block !important;
+	-webkit-mask-image: -webkit-gradient(linear, left top, right top, 
+			color-stop(0.00,  rgba(0,0,0,1)),
+			color-stop(0.35,  rgba(0,0,0,1)),
+			color-stop(0.50,  rgba(0,0,0,0)),
+			color-stop(0.75,  rgba(0,0,0,0)),
+			color-stop(1.00,  rgba(0,0,0,0)));
+	-webkit-mask-position: -1280px -800px;*/
+}
+/*
+.content .final-msj.wipe {
+	-webkit-mask-position: 0px 0px;
+	opacity: 1 !important;
+}*/
+
+
+.content .blank {
+	width:100%;
+	display:block;
+	z-index: -1;
+}
+
+.pastilla {
+	top: 430px;
+	left: 403px;
+	width: 60px;
+	/*border-radius: 10px 91px 88px 34px;*/
+}
+
+.aerosol {
+	top: 325px;
+	left: 1000px;
+	width: 30px
+}
+
+.aerosol2 {
+	top: 391px;
+	left: 671px;
+}
+
+.glade-toque {
+	top: 397px;
+	left: 160px;
+}
+
+.item {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	transition: opacity .5s ease-in-out;
+   	-webkit-transition: opacity .5s ease-in-out;
+}
+.item img{
+	display:block;
+	width: 100%;
+}
+
+.fade-item {
+	transition: all .5s ease-in-out;
+	-webkit-transform: scale(2,2); /* Chrome, Safari, Opera */
+	transform: scale(2,2);
+	/*left: 50%;
+	top: 300px;*/
+}
+
+.fade {
+	transition: opacity .5s ease-in-out;
+   	-webkit-transition: opacity .5s ease-in-out;
+   	opacity: 0 !important;
+	
+}
+
+/*.item {
+    -webkit-animation: bounce .2s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+    to {
+    	-webkit-transform: rotate(10deg);
+		transform: rotate(10deg);
+    }
+}*/

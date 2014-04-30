@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.glade.dia_madre"
+    version   = "1.0.0">
+
+<name>GRISWOLD GLADE MAMÁ</name>
+
+<description>
+	Aplicación para el día de la madre
+</description>
+
+<author href="http://www.facebook.com/renzotev" email="renzotelenta@gmail.com">
+	Renzo Telenta
+</author>
+
+<gap:splash src="splash.png" />
+<preference name="orientation" value="landscape" />
+<preference name="fullscreen" value="true" />
+
+<gap:platform name="android" />
+
+<gap:plugin name="org.apache.cordova.media" version="0.2.8" />
+
+<icon src="icon.png" gap:platform="android" />
+
+
+</widget>
